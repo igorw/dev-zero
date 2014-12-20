@@ -49,7 +49,7 @@ Or even chunk the zeroes into blocks of 64K:
 use function igorw\dev_zero;
 use function iter\chunk;
 
-$ones = chunk(dev_zero(), 64*1024);
+$blocks = chunk(dev_zero(), 64*1024);
 ```
 
 Enjoy!
