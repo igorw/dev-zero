@@ -12,6 +12,9 @@
     "require": {
         "php": ">=5.5.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
     "autoload": {
         "files": ["src/dev_zero.php"]
     },
