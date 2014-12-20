@@ -52,13 +52,13 @@ use function iter\chunk;
 $blocks = chunk(dev_zero(), 64*1024);
 ```
 
-Or if you want to get actual null bytes, you can map over the series with `ord`:
+Or if you want to get actual null bytes, you can map over the series with `chr`:
 
 ```php
 use function igorw\dev_zero;
 use function iter\map;
 
-$nulls = map('ord', dev_zero());
+$nulls = map('chr', dev_zero());
 ```
 
 Enjoy!
